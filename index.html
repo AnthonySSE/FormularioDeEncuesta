@@ -12,9 +12,9 @@
     <div id="title">
         <h1>Formulario de encuesta sobre God Of War</h1>
     </div>
-    <p id="description">
+    <h4 id="subtitle">
         Si has llegado aquí es porque God Of War es una grasa
-    </p>
+    </h4>
     <form id="survey-form">
         <label for="name" id="name-label">Nombre:</label>
         <input type="text" id="name" name="name" required placeholder="Introduzca su nombre">
@@ -22,7 +22,48 @@
         <input type="email" id="email" name="email" required placeholder="Introduzca su correo">
         <label for="number" id="number-label">Edad:</label>
         <input type="number" id="number" name="number" min=18 required placeholder="Introduzca su edad">
-        <input type="submit">
+        <br>
+        <label for="dropdown">Como describirias tu experiencia jugando a God Of War?</label><br>
+        <select name="dropdown" id="dropdown">
+            <option value="Excelente">Excelente</option>
+            <option value="Muy buena">Muy buena</option>
+            <option value="Buena">Buena</option>
+            <option value="Mala">Mala</option>
+            <option value="Muy mala">Muy mala</option>
+            <option value="Demasiado buena">La mejor saga, carajo </option>
+        </select>
+        <br>
+        <label for="recomendacion">Recomendarias la saga a tus amigos?</label><br>
+        <input type="radio" id="si" name="recomendacion" value="si">
+        <label for="si">Si</label><br>
+        <input type="radio" id="claro" name="recomendacion" value="claro">
+        <label for="claro">Claro</label><br>
+        <input type="radio" id="La mejor saga" name="recomendacion" value="si">
+        <label for="La mejor saga">AMIGO, QUE ESTA ES LA MEJOR SAGA</label>
+        <br>
+        <label for="dropdown2">Cual es tu caracteristica favorita de la saga?</label><br>
+        <select name="dropdown2" id="dropdown2">
+            <option value="Jefes">Jefes</option>
+            <option value="Armas">Armas</option>
+            <option value="Mitologia">Mitologia</option>
+            <option value="Gameplay">Gampeplay</option>
+            <option value="Historia">Historia</option>
+            <option value="Kratos">KRATOS</option>
+        </select>
+        <br>
+        <label for="checkbox">Que aspectos crees que pueden mejorar de la saga?</label>
+        <input type="checkbox" id="nada" name="checkbox" value="nada">
+        <label for="nada">Nada</label><br>
+        <input type="checkbox" id="gameplay" name="checkbox" value="gampeplay">
+        <label for="gameplay">Gameplay (Pre-reboot)</label><br>
+        <input type="checkbox" id="excepcional" name="checkbox" value="excepcional">
+        <label for="excepcional">Para que mejorar algo que es perfecto?</label><br>
+        <br>
+        <label for="comentario">Puede escribir cualquier comentario aqui...</label><br>
+        <textarea id="textarea" name="textarea" placeholder="Puede escribir cualquier comentario aqui..." 
+        cols="80" rows="10" style="resize: both;"></textarea>
+        <br>
+        <input type="submit" value="Enviar formulario" id="submit">
     </form>
 </body>
 </html>
